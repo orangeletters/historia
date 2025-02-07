@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       keyframes: {
@@ -17,12 +17,14 @@ module.exports = {
         'fadein': 'fade-in 2s',
         'fade-color': 'fade-color 10s forwards',
       },
+
+      colors: {
+        'midnight-blue': '#07132D',
+        'light-aqua': '#c6fcf7',
+        'vibrant-red': '#f44336',
+      }
     },
-    colors: {
-      'midnight-blue': '#07132D',
-      'light-aqua': '#c6fcf7',
-      'vibrant-red': '#f44336',
-    },
+
     
   },
   plugins: [],
